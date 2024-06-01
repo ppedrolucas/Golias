@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/output.css" />
+    <title>EdiLojas</title>
+  </head>
+  <body class="lg:flex">
+    <nav
+      id="navbar"
+      class="hidden fixed z-20 h-screen rounded-r-lg w-72 lg:w-64 p-4 border-r-2 bg-slate-50/50 backdrop-blur text-white"
+    >
+      <div class="flex items-center px-4 py-2 mb-8 rounded-lg bg-slate-50/50">
+        <img
+          class="size-10 rounded-full mr-4"
+          src="assets/avatar.jpeg"
+          alt="Logo"
+        />
+        <p>Mine Titã</p>
+      </div>
+      <ul class="flex flex-col gap-4 mb-8 transition duration-300 ease-in-out">
+        <li
+          class="p-4 rounded-lg transition duration-300 ease-in-out hover:bg-slate-50/50"
+        >
+          <a href="#">Início</a>
+        </li>
+        <li
+          class="p-4 rounded-lg transition duration-300 ease-in-out hover:bg-slate-50/50"
+        >
+          <a href="#">Sobre</a>
+        </li>
+        <li
+          class="p-4 rounded-lg transition duration-300 ease-in-out hover:bg-slate-50/50"
+        >
+          <a href="#">Link</a>
+        </li>
+        <li
+          class="p-4 rounded-lg transition duration-300 ease-in-out hover:bg-slate-50/50"
+        >
+          <a href="#">Link</a>
+        </li>
+      </ul>
+      <div>
+        <button class="">Modo Dark</button>
+      </div>
+    </nav>
+    <button
+      class="fixed z-20 top-2 right-2 p-4 rounded-lg shadow-2xl transition duration-300 ease-in-out bg-slate-50/50 hover:bg-slate-950/50"
+      onclick="sidebar()"
+    >
+      <img class="size-6" src="assets/icons/burguer.svg" alt="" />
+    </button>
+    <main class="bg-rose-600 pb-2">
+      <section class="h-screen w-screen pl-8 grid place-items-center degrade">
+        <div class="flex flex-col lg:flex-row items-start gap-8 text-white">
+          <h1 class="text-5xl font-bold pr-4">Edimara Almeida</h1>
+
+          <img class="rounded-l-lg" src="assets/avatar.jpeg" alt="" />
+          <p class="pr-4">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          </p>
+          <button
+            class="px-8 py-4 rounded-lg transition duration-300 ease-in-out shadow-2xl text-white bg-purple-700 hover:bg-purple-900"
+          >
+            Conhecer
+          </button>
+        </div>
+      </section>
+      <section class="max-h-max m-2 py-8 px-4 rounded-lg bg-white text-black">
+        <h1 class="text-4xl font-bold text-center mb-8">Sobre mim</h1>
+        <img
+          class="mb-8 rounded-lg"
+          src="assets/pexels-expect-best-79873-323780.jpg"
+          alt=""
+        />
+        <p class="text-lg leading-loose text-justify">
+          Meu nome é Edimara Almeida e sou uma empreendedora nata. Desde cedo,
+          sempre tive um espírito inquieto e uma vontade enorme de realizar meus
+          sonhos. Acredito que o sucesso não vem por acaso, mas sim com o
+          resultado de muito trabalho e persistência. Minha paixão por
+          empreender me impulsiona a sempre buscar novas oportunidades e me
+          superar cada dia mais.
+        </p>
+        <!--
+          Adoro buscar novas ideias e soluções para meus
+          projetos. Acredito que a criatividade é fundamental para oferecer algo
+          diferente para o mercado. Minhas lojas são o reflexo da minha
+          personalidade, são espaços onde a criatividade, a inovação e a paixão
+          se unem para oferecer aos clientes uma experiência única e especial.
+        -->
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
