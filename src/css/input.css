@@ -3,9 +3,6 @@
 @tailwind utilities;
 
 @layer components {
-  .adegrade {
-    background: linear-gradient(180deg, #e11d48, #7e22ce, #a78bfa);
-  }
   .degrade {
     background: linear-gradient(180deg, #a78bfa, #7e22ce, #e11d48);
   }
