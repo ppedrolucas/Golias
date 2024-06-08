@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -38,7 +38,7 @@
         <li
           class="p-4 rounded-lg transition duration-300 ease-in-out hover:bg-slate-50/50"
         >
-          <a href="#">Contato</a>
+          <a href="#contato">Contato</a>
         </li>
       </ul>
       <div class="mb-0">
@@ -52,7 +52,7 @@
       <img class="size-6" src="assets/icons/burguer.svg" alt="" />
     </button>
     <main class="bg-gradient-to-b from-purple-700 via-rose-600 to-violet-900">
-      <section class="">
+      <section>
         <div
           class="container h-screen mx-auto p-6 grid gap-6 grid-rows-2 md:grid-rows-1 md:grid-cols-2"
         >
@@ -83,40 +83,44 @@
         <h1 id="sobre" class="text-4xl font-bold text-center mb-8">
           Sobre mim
         </h1>
-        <img
-          class="mb-8 rounded-lg"
-          src="assets/pexels-expect-best-79873-323780.jpg"
-          alt=""
-        />
-        <p class="text-lg leading-loose text-justify">
-          Acredito que o sucesso não vem por acaso, mas sim com o resultado de
-          muito trabalho e persistência. Minha paixão por empreender me
-          impulsiona a sempre buscar novas oportunidades e me superar cada dia
-          mais. Gosto buscar novas ideias e soluções para meus projetos. Creio
-          que a criatividade é fundamental para oferecer algo diferente para o
-          mercado. Minhas lojas são o reflexo da minha personalidade, são
-          espaços onde a criatividade, a inovação e a paixão se unem para
-          oferecer uma experiência única e especial.
-        </p>
+        <div>
+          <img
+            class="md:mr-4 md:mb-4 mb-8 rounded-lg md:float-left md:w-80"
+            src="assets/pexels-expect-best-79873-323780.jpg"
+            alt=""
+          />
+          <p class="text-lg leading-loose text-justify">
+            Acredito que o sucesso não vem por acaso, mas sim com o resultado de
+            muito trabalho e persistência. Minha paixão por empreender me
+            impulsiona a sempre buscar novas oportunidades e me superar cada dia
+            mais. Gosto buscar novas ideias e soluções para meus projetos. Creio
+            que a criatividade é fundamental para oferecer algo diferente para o
+            mercado. Minhas lojas são o reflexo da minha personalidade, são
+            espaços onde a criatividade, a inovação e a paixão se unem para
+            oferecer uma experiência única e especial.
+          </p>
+        </div>
       </section>
       <section class="max-h-max rounded-t-xl py-8 px-6 bg-white">
         <h1 id="lojas" class="text-4xl font-bold text-center mb-8">Lojas</h1>
         <div class="h-screen">
           <h2 class="text-3xl font-bold mb-6">Acessórios Diversos</h2>
 
-          <p class="text-lg leading-loose mb-6">
-            Mais do que uma loja de acessórios, aqui é um espaço para celebrar a
-            individualidade e a beleza de cada pessoa. Acreditamos que todos
-            merecem se sentir confiantes e empoderados, e nossos acessórios são
-            apenas uma das ferramentas que podemos oferecer para alcançar esse
-            objetivo.
-          </p>
-          <div class="border rounded-xl mb-6 border-slate-600">
-            <img
-              class="rounded-xl"
-              src="assets/bg/carrosel1.jpg"
-              alt="Logo de acessórios diversificados"
-            />
+          <div class="grid grid-cols-1 md:grid-cols-2 md:gap-6">
+            <p class="text-lg leading-loose mb-6">
+              Mais do que uma loja de acessórios, aqui é um espaço para celebrar
+              a individualidade e a beleza de cada pessoa. Acreditamos que todos
+              merecem se sentir confiantes e empoderados, e nossos acessórios
+              são apenas uma das ferramentas que podemos oferecer para alcançar
+              esse objetivo.
+            </p>
+            <div class="border rounded-xl mb-6 border-slate-600">
+              <img
+                class="rounded-xl"
+                src="assets/bg/carrosel1.jpg"
+                alt="Logo de acessórios diversificados"
+              />
+            </div>
           </div>
           <button
             class="px-8 py-4 rounded-lg transition duration-300 ease-in-out shadow-2xl font-bold text-white bg-purple-700 hover:bg-purple-900"
@@ -126,19 +130,21 @@
         </div>
         <div class="h-screen">
           <h2 class="text-3xl font-bold mb-6">Ponteiras Artesanais</h2>
-          <p class="text-lg leading-loose mb-6">
-            Além de simples objetos decorativos, minhas ponteiras são
-            verdadeiras obras de arte que podem ser usadas no dia a dia ou
-            presenteadas para alguém especial. Elas são perfeitas para
-            personalizar seus materiais de escrita, dar um toque de criatividade
-            ao seu trabalho ou estudo, e até mesmo colecioná-las.
-          </p>
-          <div class="border rounded-xl mb-6 border-slate-600">
-            <img
-              class="rounded-xl"
-              src="assets/bg/carrosel2.jpg"
-              alt="Logo de acessórios diversificados"
-            />
+          <div class="grid grid-cols-1 md:grid-cols-2 md:gap-6">
+            <p class="text-lg leading-loose mb-6">
+              Além de simples objetos decorativos, minhas ponteiras são
+              verdadeiras obras de arte que podem ser usadas no dia a dia ou
+              presenteadas para alguém especial. Elas são perfeitas para
+              personalizar seus materiais de escrita, dar um toque de
+              criatividade ao seu trabalho ou estudo, e até mesmo colecioná-las.
+            </p>
+            <div class="border rounded-xl mb-6 border-slate-600">
+              <img
+                class="rounded-xl"
+                src="assets/bg/carrosel2.jpg"
+                alt="Logo de acessórios diversificados"
+              />
+            </div>
           </div>
           <button
             class="px-8 py-4 rounded-lg transition duration-300 ease-in-out shadow-2xl font-bold text-white bg-purple-700 hover:bg-purple-900"
@@ -148,14 +154,16 @@
         </div>
       </section>
       <section class="max-h-max rounded-t-xl py-8 px-6">
-        <h1 class="text-4xl font-bold text-center mb-8 text-white">Contato</h1>
-        <div class="bg-white w-full rounded-xl p-4">
+        <h1 id="contato" class="text-4xl font-bold text-center mb-8 text-white">
+          Contato
+        </h1>
+        <div class="bg-white container w-full rounded-xl p-4">
           <form action="" method="post">
             <h2 class="text-2xl mb-8 font-bold text-center">Vamos conversar</h2>
             <div class="w-full mb-6 flex flex-col">
-              <label for="name" class="mb-4">Nome:</label>
+              <label for="name" class="mb-2">Nome:</label>
               <input
-                class="w-full p-4 border-2 rounded-xl"
+                class="w-full p-4 border-2 rounded-xl focus:outline focus:outline-purple-600"
                 id="name"
                 type="text"
                 placeholder="Digite seu nome"
@@ -164,9 +172,9 @@
               />
             </div>
             <div class="w-full mb-6 flex flex-col">
-              <label for="email" class="mb-4">E-mail:</label>
+              <label for="email" class="mb-2">E-mail:</label>
               <input
-                class="w-full p-4 border-2 rounded-xl"
+                class="w-full p-4 border-2 rounded-xl focus:outline focus:outline-purple-600"
                 id="email"
                 type="email"
                 placeholder="Digite seu endereço de E-mail"
@@ -175,9 +183,9 @@
               />
             </div>
             <div class="w-full mb-6 flex flex-col">
-              <label for="menssage" class="mb-4">Mensagem:</label>
+              <label for="menssage" class="mb-2">Mensagem:</label>
               <textarea
-                class="w-full p-4 border-2 rounded-xl"
+                class="resize-y w-full p-4 border-2 rounded-xl focus:outline focus:outline-purple-600"
                 name=""
                 id="menssage"
                 placeholder="Digite sua mensagem aqui."
@@ -194,6 +202,9 @@
           </form>
         </div>
       </section>
+      <footer>
+        <div class="container"></div>
+      </footer>
     </main>
 
     <script src="script.js"></script>
