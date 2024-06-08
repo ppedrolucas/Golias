@@ -4,6 +4,6 @@
 
 @layer components {
   .degrade {
-    background: linear-gradient(180deg, #a78bfa, #7e22ce, #e11d48);
+    background: linear-gradient(180deg, #7e22ce, #e11d48);
   }
 }
