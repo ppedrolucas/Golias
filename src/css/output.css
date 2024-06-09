@@ -997,6 +997,10 @@ video {
     margin-right: 1rem;
   }
 
+  .md\:grid {
+    display: grid;
+  }
+
   .md\:w-80 {
     width: 20rem;
   }
