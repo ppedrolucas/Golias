@@ -681,6 +681,10 @@ video {
   width: 100%;
 }
 
+.w-\[512px\] {
+  width: 512px;
+}
+
 .resize-y {
   resize: vertical;
 }
