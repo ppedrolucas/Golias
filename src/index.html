@@ -1,56 +1,15 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="pt-br" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/output.css" />
+    <script src="components/footer.js"></script>
+    <script src="components/sidebar.js"></script>
     <title>EdiLojas</title>
   </head>
   <body class="lg:flex">
-    <nav
-      id="navbar"
-      class="hidden fixed z-20 h-screen rounded-r-lg w-72 lg:w-64 p-4 border-r-2 bg-zinc-400/50 backdrop-blur text-white"
-    >
-      <div class="flex items-center px-4 py-2 mb-8 rounded-lg bg-slate-50/50">
-        <img
-          class="size-10 rounded-full mr-4"
-          src="assets/avatar.jpeg"
-          alt="Logo"
-        />
-        <p>Mine Titã</p>
-      </div>
-      <ul class="flex flex-col gap-4 mb-8 transition duration-300 ease-in-out">
-        <li
-          class="p-4 rounded-lg transition duration-300 ease-in-out hover:bg-slate-50/50"
-        >
-          <a href="#home">Início</a>
-        </li>
-        <li
-          class="p-4 rounded-lg transition duration-300 ease-in-out hover:bg-slate-50/50"
-        >
-          <a href="#sobre">Sobre mim</a>
-        </li>
-        <li
-          class="p-4 rounded-lg transition duration-300 ease-in-out hover:bg-slate-50/50"
-        >
-          <a href="#lojas">Minhas Lojas</a>
-        </li>
-        <li
-          class="p-4 rounded-lg transition duration-300 ease-in-out hover:bg-slate-50/50"
-        >
-          <a href="#contato">Contato</a>
-        </li>
-      </ul>
-      <div class="mb-0">
-        <button class="">Modo Dark</button>
-      </div>
-    </nav>
-    <button
-      class="fixed z-20 top-2 right-2 p-4 rounded-lg shadow-2xl transition duration-300 ease-in-out bg-zinc-400/50 hover:bg-slate-950/50"
-      onclick="sidebar()"
-    >
-      <img class="size-6" src="assets/icons/burguer.svg" alt="" />
-    </button>
+    <main-sidebar> </main-sidebar>
     <main class="bg-gradient-to-b from-purple-700 via-rose-600 to-violet-900">
       <section>
         <div
@@ -103,17 +62,11 @@
       </section>
       <section class="max-h-max rounded-t-xl py-8 px-6 bg-white">
         <h1 id="lojas" class="text-4xl font-bold text-center mb-8">Lojas</h1>
-        <div class="h-screen">
-          <h2 class="text-3xl font-bold mb-6">Acessórios Diversos</h2>
 
-          <div class="grid grid-cols-1 md:grid-cols-2 md:gap-6">
-            <p class="text-lg leading-loose mb-6">
-              Mais do que uma loja de acessórios, aqui é um espaço para celebrar
-              a individualidade e a beleza de cada pessoa. Acreditamos que todos
-              merecem se sentir confiantes e empoderados, e nossos acessórios
-              são apenas uma das ferramentas que podemos oferecer para alcançar
-              esse objetivo.
-            </p>
+        <div class="grid grid-cols-1">
+          <div class="max-h-max mb-16">
+            <h2 class="text-3xl font-bold mb-6">Acessórios Diversos</h2>
+
             <div class="border rounded-xl mb-6 border-slate-600">
               <img
                 class="rounded-xl"
@@ -121,39 +74,49 @@
                 alt="Logo de acessórios diversificados"
               />
             </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 md:gap-6">
+              <p class="text-lg leading-loose text-justify mb-6">
+                Mais do que uma loja de acessórios, aqui é um espaço para
+                celebrar a individualidade e a beleza de cada pessoa.
+                Acreditamos que todos merecem se sentir confiantes e
+                empoderados, e nossos acessórios são apenas uma das ferramentas
+                que podemos oferecer para alcançar esse objetivo.
+              </p>
+              <a
+                href="page.html"
+                class="px-8 py-4 text-center rounded-lg transition duration-300 ease-in-out shadow-2xl font-bold text-white bg-purple-700 hover:bg-purple-900"
+                >Saiba mais</a
+              >
+            </div>
           </div>
-          <button
-            class="px-8 py-4 rounded-lg transition duration-300 ease-in-out shadow-2xl font-bold text-white bg-purple-700 hover:bg-purple-900"
-          >
-            Saiba mais
-          </button>
-        </div>
-        <div class="h-screen">
-          <h2 class="text-3xl font-bold mb-6">Ponteiras Artesanais</h2>
-          <div class="grid grid-cols-1 md:grid-cols-2 md:gap-6">
-            <p class="text-lg leading-loose mb-6">
-              Além de simples objetos decorativos, minhas ponteiras são
-              verdadeiras obras de arte que podem ser usadas no dia a dia ou
-              presenteadas para alguém especial. Elas são perfeitas para
-              personalizar seus materiais de escrita, dar um toque de
-              criatividade ao seu trabalho ou estudo, e até mesmo colecioná-las.
-            </p>
+          <div class="max-h-max mb-16">
+            <h2 class="text-3xl font-bold mb-6">Ponteiras Artesanais</h2>
             <div class="border rounded-xl mb-6 border-slate-600">
               <img
                 class="rounded-xl"
                 src="assets/bg/carrosel2.jpg"
-                alt="Logo de acessórios diversificados"
+                alt="Logo de ponteiras artesanais"
               />
             </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 md:gap-6">
+              <p class="text-lg leading-loose text-justify mb-6">
+                Além de simples objetos decorativos, minhas ponteiras são
+                verdadeiras obras de arte que podem ser usadas no dia a dia ou
+                presenteadas para alguém especial. Elas são perfeitas para
+                personalizar seus materiais de escrita, dar um toque de
+                criatividade ao seu trabalho ou estudo, e até mesmo
+                colecioná-las.
+              </p>
+              <button
+                class="px-8 py-4 rounded-lg transition duration-300 ease-in-out shadow-2xl font-bold text-white bg-purple-700 hover:bg-purple-900"
+              >
+                Saiba mais
+              </button>
+            </div>
           </div>
-          <button
-            class="px-8 py-4 rounded-lg transition duration-300 ease-in-out shadow-2xl font-bold text-white bg-purple-700 hover:bg-purple-900"
-          >
-            Saiba mais
-          </button>
         </div>
       </section>
-      <section class="max-h-max rounded-t-xl py-8 px-6">
+      <section class="max-h-max py-8 px-6">
         <h1 id="contato" class="text-4xl font-bold text-center mb-8 text-white">
           Contato
         </h1>
@@ -193,7 +156,6 @@
               ></textarea>
             </div>
             <button
-              autofocus
               type="submit"
               class="w-full px-8 py-4 rounded-lg transition duration-300 ease-in-out shadow-2xl font-bold text-white bg-purple-700 hover:bg-purple-900"
             >
@@ -202,9 +164,7 @@
           </form>
         </div>
       </section>
-      <footer>
-        <div class="container"></div>
-      </footer>
+      <main-footer> </main-footer>
     </main>
 
     <script src="script.js"></script>
