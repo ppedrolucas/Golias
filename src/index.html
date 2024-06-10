@@ -10,7 +10,9 @@
   </head>
   <body class="lg:flex">
     <main-sidebar> </main-sidebar>
-    <main class="bg-gradient-to-b from-purple-700 via-rose-600 to-violet-900">
+    <main
+      class="bg-gradient-to-b from-purple-700 dark:from-slate-900 via-rose-600 dark:via-purple-950 to-violet-900 dark:to-neutral-950"
+    >
       <section>
         <div
           class="container h-screen mx-auto p-6 grid gap-6 grid-rows-2 md:grid-rows-1 md:grid-cols-2"
@@ -19,7 +21,7 @@
             <img class="rounded-xl h-full" src="assets/avatar.jpeg" alt="" />
           </div>
           <div class="h-full grid place-items-center md:justify-start">
-            <div class="flex flex-col text-white">
+            <div class="flex flex-col text-white dark:text-zinc-400">
               <h1 id="home" class="text-5xl font-bold mb-8">Edimara Almeida</h1>
 
               <p class="mb-6">
@@ -29,12 +31,12 @@
               </p>
               <button
                 onclick="openModal()"
-                class="w-full md:max-w-max px-8 py-4 rounded-lg transition duration-300 ease-in-out border border-1-white text-white bg-transparent hover:bg-white hover:text-black"
+                class="w-full md:max-w-max px-8 py-4 rounded-lg transition duration-300 ease-in-out border border-1-white dark:border-zinc-400 text-white dark:text-zinc-400 bg-transparent hover:bg-white dark:hover:bg-zinc-400 hover:text-black"
               >
                 Conhecer
               </button>
               <dialog
-                class="w-[512px] p-6 rounded-xl shadow-2xl transition duration-300 ease-in-out"
+                class="w-[512px] p-6 rounded-xl shadow-2xl transition duration-300 ease-in-out dark:bg-zinc-900 dark:text-zinc-400"
               >
                 <p class="text-justify leading-loose mb-8">
                   Lorem, ipsum dolor sit amet consectetur adipisicing elit.
@@ -54,7 +56,7 @@
         </div>
       </section>
       <section
-        class="max-h-max m-2 mb-6 py-8 px-4 rounded-xl bg-white text-black"
+        class="max-h-max m-2 mb-6 py-8 px-4 rounded-xl bg-white dark:bg-zinc-900 text-black dark:text-zinc-400"
       >
         <h1 id="sobre" class="text-4xl font-bold text-center mb-8">
           Sobre mim
@@ -77,7 +79,9 @@
           </p>
         </div>
       </section>
-      <section class="max-h-max rounded-t-xl py-8 px-6 bg-white">
+      <section
+        class="max-h-max rounded-t-xl py-8 px-6 bg-white dark:bg-zinc-900 dark:text-zinc-400"
+      >
         <h1 id="lojas" class="text-4xl font-bold text-center mb-8">Lojas</h1>
 
         <div class="grid grid-cols-1">
@@ -133,10 +137,15 @@
         </div>
       </section>
       <section class="max-h-max py-8 px-6">
-        <h1 id="contato" class="text-4xl font-bold text-center mb-8 text-white">
+        <h1
+          id="contato"
+          class="text-4xl font-bold text-center mb-8 text-white dark:text-zinc-400"
+        >
           Contato
         </h1>
-        <div class="bg-white md:w-[512px] md:mx-auto w-full rounded-xl p-4">
+        <div
+          class="md:w-[512px] md:mx-auto w-full rounded-xl p-4 bg-white dark:bg-zinc-900 dark:text-zinc-400"
+        >
           <form
             action="https://formsubmit.co/pereiradev2023@gmail.com"
             method="POST"
@@ -145,7 +154,7 @@
             <div class="w-full mb-6 flex flex-col">
               <label for="name" class="mb-2">Nome:</label>
               <input
-                class="w-full p-4 border-2 rounded-xl focus:outline focus:outline-purple-600"
+                class="w-full p-4 border-2 dark:border-0 rounded-xl focus:outline focus:outline-purple-600 dark:bg-zinc-950"
                 id="name"
                 name="nome"
                 type="text"
@@ -157,7 +166,7 @@
             <div class="w-full mb-6 flex flex-col">
               <label for="email" class="mb-2">E-mail:</label>
               <input
-                class="w-full p-4 border-2 rounded-xl focus:outline focus:outline-purple-600"
+                class="w-full p-4 border-2 dark:border-0 rounded-xl focus:outline focus:outline-purple-600 dark:bg-zinc-950"
                 id="email"
                 name="email"
                 type="email"
@@ -169,7 +178,7 @@
             <div class="w-full mb-6 flex flex-col">
               <label for="menssage" class="mb-2">Mensagem:</label>
               <textarea
-                class="resize-y w-full p-4 border-2 rounded-xl focus:outline focus:outline-purple-600"
+                class="resize-y w-full p-4 border-2 dark:border-0 rounded-xl focus:outline focus:outline-purple-600 dark:bg-zinc-950"
                 id="menssage"
                 name="mensagem"
                 placeholder="Digite sua mensagem aqui."

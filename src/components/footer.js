@@ -3,7 +3,7 @@ class Footer extends HTMLElement {
     let data = new Date();
     let ano = data.getFullYear();
     this.innerHTML = `
-    <footer class="w-full bg-white">
+    <footer class="w-full bg-white dark:bg-zinc-900 dark:text-zinc-400">
         <div class="container mx-auto p-6 flex items-center justify-between">
           <div>
             <p class="text-xs">${ano} &copy; Todos os direitos reservados.</p>
