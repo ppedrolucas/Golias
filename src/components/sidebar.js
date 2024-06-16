@@ -3,7 +3,7 @@ class Sidebar extends HTMLElement {
     this.innerHTML = `
     <nav
       id="navbar"
-      class="hidden fixed z-20 h-screen rounded-r-lg w-72 lg:w-64 p-4 border-r-2 bg-zinc-400/50 dark:bg-zinc-900/50 backdrop-blur text-white dark:text-zinc-400"
+      class="hidden fixed z-20 h-screen rounded-r-lg w-72 lg:w-[512px] p-4 border-r-2 bg-zinc-400/50 dark:bg-zinc-900/50 backdrop-blur text-white dark:text-zinc-400"
     >
       <div class="flex items-center px-4 py-2 mb-8 rounded-lg bg-slate-50/50 dark:bg-zinc-950/50">
         <img
